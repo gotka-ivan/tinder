@@ -1,24 +1,32 @@
 # tinder
 
-## Project setup
+## Инициализация проекта
+
+### Инициализация клиента
 ```
-npm install
+yarn install
+```
+### Инициализация клиента
+```
+cd server
 ```
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn install
+```
+## Запуск проекта
+
+### Компиляция клиента с горячей-перезагрузкой для разработки
+```
+yarn serve
 ```
 
-### Compiles and minifies for production
+### Компиляция сервера с горячей-перезагрузкой для разработки
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+cd server
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+yarn server
+```
+
