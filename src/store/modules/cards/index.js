@@ -41,11 +41,11 @@ export default {
     }
   },
   actions: {
-    async getCards({ commit, state }) {
+    getCards({ commit, state }) {
       /**
        * Обращение в контроллер за получением карточек с сервера
        */
-      await getCards(state.chunkIndex)
+      getCards(state.chunkIndex)
         .then(cards => {
           commit('setChunkIndex', state.chunkIndex + 1);
           commit('setList', cards);
