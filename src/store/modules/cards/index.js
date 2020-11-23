@@ -24,7 +24,7 @@ export default {
     /**
      * Индекс текущей карточки
      */
-    currentIndex: 0,
+    currentIndex: 0
   }),
   mutations: {
     setList(state, list) {
@@ -45,9 +45,7 @@ export default {
       /**
        * Обращение в контроллер за получением карточек с сервера
        */
-      const response = await getCards(state.chunkIndex);
-      response
-        .json()
+      await getCards(state.chunkIndex)
         .then(cards => {
           commit('setChunkIndex', state.chunkIndex + 1);
           commit('setList', cards);

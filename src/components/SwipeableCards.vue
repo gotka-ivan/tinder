@@ -108,10 +108,10 @@ export default {
      */
     emitAndNext(event) {
       this.$emit(event, this.currentIndex);
-      setTimeout(() => this.state.isVisibleCurrent = false, 200);
+      setTimeout(() => (this.state.isVisibleCurrent = false), 200);
       setTimeout(() => {
         this.$store.commit('cards/setCurrentIndex', this.currentIndex + 1);
-        this.state.isVisibleCurrent = true
+        this.state.isVisibleCurrent = true;
       }, 200);
     }
   }
