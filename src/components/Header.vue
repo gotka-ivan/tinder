@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <Reload :size="22" @click="$store.commit('cards/setCardIndex', 0)" />
+    <Reload :size="22" @click="$store.commit('cards/setCurrentIndex', 0)" />
     <div>Tinder</div>
     <Menu :size="22" />
   </div>

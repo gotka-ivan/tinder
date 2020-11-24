@@ -30,3 +30,12 @@ cd server
 yarn server
 ```
 
+#### Или запуск сервера
+```
+cd server
+```
+
+```
+yarn start
+```
+
